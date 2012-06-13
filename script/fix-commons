@@ -1,0 +1,10 @@
+#!/bin/bash
+
+if [ -z $1 ]
+then
+    echo "Usage: ./fix-commons filename"
+    exit -1
+fi
+
+sed -i -r "s/\\\caption\{(.*?[^\.])\}/\\\caption{\1.}/g" $1
+

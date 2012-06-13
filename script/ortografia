@@ -1,0 +1,10 @@
+#!/bin/bash
+
+if [ -z $1 ]
+then
+    echo "Usage: ./ortografia filename"
+    exit -1
+fi
+
+aspell -p ./dizionario-fisica -l it -t -c $1
+

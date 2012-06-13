@@ -1,0 +1,27 @@
+\sffamily\itshape
+\section*{\centering Introduzione}
+%\addstarredsection{Introduzione} % per minitoc
+
+\addcontentsline{toc}{section}{\numberline{}Introduzione}
+Questi sono i riassunti tratti dalle lezioni di Fisica 1 del %``buon''
+prof.~Antonino Pullia, durante l'anno accademico 2003/04, dalle lezioni di Fisica 2 del prof.~Marcello Fontanesi, durante l'anno accademico 2004/05, dalle lezioni di Fisica 3 del prof.~Baldini durante l'anno accademico 2004/05, e altre fonti nella bibliografia (lezioni: \cite{Pullia, Fontanesi, Baldini, Paganoni, Lucchini, Franzoni, Monica, Barney, Maddalena}, libri principali: \cite{Fisica1, Feynm, modern, elettro, ottica, enge, alonso, jackson, mazzoldi}). Composto con \LaTeXe\footnote{Non sai cos'è il \LaTeX: vergognati! Documentati subito, potresti non poterne farne a meno, \href{http://tug.ctan.org/tex-archive/info/lshort/italian/itlshort.pdf}{http://tug.ctan.org/tex-archive/info/lshort/italian/itlshort.pdf}}. Le immagini sono state fatte con XFig, \Xy-pic, Tikz, Inkscape o 3dstudiomax. I grafici in Matlab, Maple, Mathematica o in Gnuplot.
+\newline\newline
+Ultimo aggiornamento: \today. Revision: \SVNRevision
+
+\section*{\centering Disclaimer}
+%\addstarredsection{Disclamer} % per minitoc
+\addcontentsline{toc}{section}{\numberline{}Disclaimer}
+Di questo documento puoi farne quello che vuoi, distribuirlo, fotocopiarlo, usare come carta per accendere il camino o per non sporcare per terra quando imbianchi i muri, a patto che l'autore originale e la sua email vengano riportati in modo significativo insieme a questo disclamer nella sua forma originale. Possono essere fatte modifiche solo allo scopo di migliorare il do\-cu\-men\-to. L'autore sarà felice di ricevere una copia di queste modifiche. In nessun caso questo documento, parti di esso o opere derivate potranno essere utilizzati come  fonte di lucro; l'unico eventuale ricavo ammesso è quello relativo alle spese di distribuzione, per esempio le spese di stampa. Questo documento non è la Bibbia, esso nasce per uso personale, ed è distribuito senza garanzia sui contenuti (se prendente un brutto voto studiando su questi appunti non prendetevela con me).
+\section*{\centering Notazioni}
+%\addstarredsection{Notazioni} % per minitoc
+\addcontentsline{toc}{section}{\numberline{}Notazioni}
+Purtroppo nelle figure spesso al posto delle lettere greche ($\alpha$, $\beta$) viene riportato il loro nome in lettere latine: alfa (alpha), beta\ldots Stessa cosa per i pedici o gli apici, al posto di $T_1$ T\_1 e al posto di $z^2$ z$^\wedge$2. La $\ud$ delle derivate è dritta a differenza della $d$ come variabile.
+\newpage
+\section*{\centering Collaborare}
+%\addstarredsection{Collaborare} % per minitoc
+\addcontentsline{toc}{section}{\numberline{}Collaborare}
+Queste note sono state scritte per ora praticamente da una sola persona. Sono disponibili all'indirizzo \href{http://code.google.com/p/fisica123}{http://code.google.com/p/fisica123}. Qui è possibile scaricare i sorgenti \LaTeX ed è possibile caricare nuove modifiche attraverso Subversion. Per qualsiasi suggerimento, critica, \ldots potete scrivere sulla lista dei problemi: \href{http://code.google.com/p/fisica123/issues/list}{http://code.google.com/p/fisica123/issues/list}, oppure scrivere direttamente all'autore:
+\begin{center}
+\framebox[1.1\width][c]{\textup{\textsf{\href{mailto://giurrero@gmail.com}{giurrero@gmail.com}}}}
+\end{center}
+\rmfamily\upshape

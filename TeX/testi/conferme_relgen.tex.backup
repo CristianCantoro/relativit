@@ -1,0 +1,181 @@
+\chapter{Conferme sperimentali della relatività speciale}
+\minitoc
+
+\section{Paradossi}
+Riassumiamo brevemente alcuni degli effetti paradossali predetti dalla Rela-
+tività Generale che abbiamo trovato nelle sezioni precedenti, insieme ad altri
+che non abbiamo analizzato e cui accenniamo solo brevemente.
+
+\begin{itemize}
+ \item Deviazione geodetica: a causa della curvatura dello spaziotempo due
+geodetiche localmente vicine possono divergere; questo si traduce ad
+esempio nel cambio di orientazione nel tempo di un giroscopio orbitante.
+ \item Precessione dei perieli: i semiassi delle orbite planetarie ruotano
+(``precedono'') nel tempo più di quanto la teoria della gravità newtoniana 
+avesse predetto. La conferma sperimentale più importante è stata la precessione 
+del perielio di Mercurio, la cui marcata orbita a ``rosetta'' è 
+in linea con i calcoli teorici della Relatività Generale.
+\end{itemize}
+
+
+• Buchi neri: come previsto dalla teoria di Schwarzschild, i buchi neri
+sono corpi aventi raggio di Schwarzschild maggiore del proprio raggio,
+in cui le informazioni entranti non potranno mai pi` essere recuperate.35
+u
+• Deviazione dei raggi luminosi: a causa della gravit`, anche le onde
+a
+luminose e i segnali radar incurvano la loro traiettoria. In particolare,
+se lo spazio ` incurvato dal campo gravitazionale solare, un raggio di
+e
+luce che passa nelle vicinanze del sole non compier` un cammino ret-
+a
+tilineo: dunque le stelle la cui luce ci giunge passando vicino al sole
+ci appariranno in una posizione leggermente deviata dalla loro posi-
+zione effettiva. Di questo fatto di cui si ` avuta conferma sperimentale
+e
+osservando pulsar passare dietro al sole durante le eclissi di sole.
+• Dilatazione gravitazionale dei tempi: il tempo scorre pi` lenta-
+u
+mente ove il campo ` pi` intenso - fatto che abbiamo gi` ricaviamo
+e u
+a
+precedentemente, con l’equazione (12.57).
+Per convincerci di ci` in altro modo, consideriamo la ﬁgura 12.8: A `
+o
+e
+un osservatore posto al centro di un disco rotante, B ` un osservatore
+e
+posto sul bordo del disco rotante, C ` un osservatore inerziale posto
+e
+a terra, al di fuori del disco rotante. Dato che A e C sono in quiete
+relativa, vedranno scorrere il tempo nello stesso modo. Dato inoltre che
+B ` in moto, nel giudizio di C, allora C vedr` l’orologio di B battere
+e
+a
+35
+Pi` recentemente sono nate molte altre variegate teorie al riguardo.
+u
+
+Figura 12.8: “Disco di Einstein”: A e B ruotano sul disco, A al centro e B
+al bordo, C ` fermo a terra. Nel giudizio sia di A sia di B il tempo per C
+e
+scorre pi` lentamente, ma se per B questo si spiega col fatto che egli ` in moto
+u
+e
+relativo rispetto a C, A non ` in moto relativo rispetto a C. A vede dunque
+e
+scorrere pi` lentamente il tempo dove il campo di accelerazioni ` pi` forte, e
+u
+e u
+quindi verso il bordo.
+pi` lentamente, e dunque anche A dovr` vedere l’orologio di B battere
+u
+a
+pi` lentamente.
+u
+D’altro canto, anche A e C sono in quiete relativa, poich´ sono entrambi
+e
+sulla piattaforma rotante. E se per C il fatto che l’orologio di B batta
+pi` lentamente si pu` spiegare quindi con il fatto che B ` in moto
+u
+o
+e
+relativo rispetto a C, questo non regge pi` per A, poich´ non v’` alcun
+u
+e
+e
+moto relativo tra A e B sulla disco, c’` solo un campo di accelerazioni
+e
+centripete verso il centro del disco. Ne discende che, nel giudizio di
+A, il tempo scorre pi` lentamente verso il bordo, e ricordando che
+u
+l’accelerazione centripeta ` data da ω 2 r, possiamo anche generalizzare
+e
+dicendo che gli orologi battono pi` lentamente laddove il campo ` pi`
+u
+e u
+forte.
+• Lunghezza delle circonferenze: dall’esperimento mentale appena
+esposto si deduce anche un altro fatto curioso. Se posizioniamo (a
+riposo) dei metri lungo la circonferenza del disco e lungo il suo diametro,
+troveremo che naturalmente il rapporto tra il numero di metri usati sar`
+a
+π. Se immaginiamo ora che la piattaforma si metta a ruotare, mentre
+i metri posti lungo il diametro (ortogonali al moto) non cambieranno
+lunghezza, i metri posti lungo la circonferenza (longitudinali al moto) si
+accorceranno, e dunque avremo bisogno di pi` metri per coprire tutta
+u
+la circonferenza. Esibendo un rapporto tra circonferenza e diametro
+che non ` pi` il valore costante π, questo esperimento curioso mostra
+e u
+anche che la geometria della Relativit` Generale non pu` pi` essere la
+a
+o u
+geometria euclidea o semieuclidea.
+• Red-shift gravitazionale: fenomeno direttamente derivante dalla di-
+
+
+latazione gravitazionale dei tempi. A causa della deformazione spazio-
+temporale prodotta dal campo gravitazionale solare, ad esempio, ve-
+diamo le righe degli spettri degli atomi solari eccitati a una frequenza
+minore di quella che vedremmo per atomi eccitati sulla terra.
+• Espansione dell’universo: le prime soluzioni cosmologiche alle equa-
+zioni di campo di Einstein prevedevano un universo in espansione, fatto
+confermato dagli esperimenti di Edwin Hubble nel 1921.
+12.4.2
+Guardando avanti
+In un certo senso, questo ` solo l’inizio della Relativit` Generale, il cui ul-
+e
+a
+teriore studio si intreccia poi naturalmente con la cosmologia, per cui la
+Relativit` Generale costituisce un ottimo modello geometrico gravitazionale,
+a
+un modello che ha superato indenne tutti i test sperimentali seri cui ` stato
+e
+sottoposto negli ultimi decenni.
+D’altro canto, il problema pi` serio ` che la Relativit` Generale ` in aperto
+u
+e
+a
+e
+conﬂitto con la meccanica quantistica; le predizioni relativistiche che sem-
+brano valere “nel grande” sicuramente non valgono “in piccolo”: la necessit`
+a
+dei ﬁsici ` quindi ora quella di uniﬁcare questi due mondi cos` diversi (Rela-
+e
+ı
+tivit` e Meccanica Quantistica), riuscendo a costruire una teoria coerente e
+a
+consistente, che possa inglobarle con successo.
+
+\section{Un'applicazione: il GPS}
+
+Il Selective Availability è un sistema di generazione di errori voluto espressamente dal Dipartimento della Difesa 
+statunitense per consentire il Global Positioning System (GPS) per usi civili.
+
+Nel 1991, infatti, venne reso disponibile per usi civili il sistema Standard Positioning System (SPS), 
+che introduceva volutamente degli errori mediante il Selective Availability in modo da rendere inaccurati i valori.
+
+Dal 2000 si è rinunciato alla Selective Availability e l'SPS è divenuto accurato quasi quanto il 
+Precision Positioning System (PPS), usato per scopi militari.
+
+Gli orologi satellitari sono affetti dalle conseguenze della teoria della relatività. 
+Infatti, a causa degli effetti combinati della velocità relativa, che rallenta il tempo sul satellite di circa 
+7 microsecondi al giorno, e della minore curvatura dello spaziotempo a livello dell'orbita del satellite, 
+che lo accelera di 45 microsecondi, il tempo sul satellite scorre ad un ritmo leggermente più veloce che a terra, 
+causando un anticipo di circa 38 microsecondi al giorno, e rendendo necessaria una correzione automatica da parte 
+dell'elettronica di bordo. 
+
+Questa osservazione fornisce un'ulteriore prova dell'esattezza della teoria einsteniana 
+in un'applicazione del mondo reale. L'effetto relativistico rilevato è, infatti, esattamente corrispondente a quello 
+calcolabile teoricamente, almeno nei limiti di accuratezza forniti dagli strumenti di misura 
+attualmente disponibili. Possono, inoltre, esistere altri tipi di errori del GPS che sono appunto 
+di tipo atmosferico e di tipo elettronico.
+
+È di fondamentale importanza ribadire che quello che permette al GPS la precisione cui 
+si arriva (incertezze di pochi metri), sono proprio le correzioni di relatività generale; 
+quelle della relatività ristretta, che ignorerebbero l'effetto sugli orologi dei satelliti, 
+darebbero incertezze dell'ordine del chilometro che renderebbero il sistema del tutto inutile.
+
+\url{http://www.astronomy.ohio-state.edu/~pogge/Ast162/Unit5/gps.html}
+\url{http://it.wikipedia.org/wiki/Selective_Availability}

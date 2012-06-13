@@ -1,0 +1,17 @@
+#!/bin/bash
+
+if [ -z $1 ]
+then
+    echo "Usage: ./test-img img"
+    echo " where img is a tikz image"
+    exit -1
+fi
+
+
+sed 's#__THE_FILE__#'"$1"'#g' img-template.tex > tmp.tex
+pdflatex tmp.tex
+rm tmp.aux  tmp.log tmp.tex
+
+
+# okular tmp.pdf
+

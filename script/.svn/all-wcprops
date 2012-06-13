@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 30
+/svn/!svn/ver/111/trunk/script
+END
+fix-commons
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/!svn/ver/105/trunk/script/fix-commons
+END
+fix-gp-svg.pl
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/!svn/ver/6/trunk/script/fix-gp-svg.pl
+END
+dizionario-fisica
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/75/trunk/script/dizionario-fisica
+END
+img-template.tex
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/83/trunk/script/img-template.tex
+END
+test-img
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/svn/!svn/ver/111/trunk/script/test-img
+END
+ortografia
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/svn/!svn/ver/34/trunk/script/ortografia
+END

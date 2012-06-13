@@ -1,0 +1,728 @@
+\chapter{Relatività speciale\index{relatività!speciale|(}\index{relatività!ristretta|see{speciale}}}
+\minitoc
+
+La cinematica sviluppata da Galileo e la meccanica sviluppata da Newton, che costituiscono le fondamenta della cosiddetta 
+fisica classica, hanno riscosso enormi successi: ricordiamo in particolare la teoria copernicana del moto dei pianeti 
+nel sistema solare e il ricorso alla cinematica per spiegare certe proprietà dei gas scoperte sperimentalmente, la 
+teoria cinetica dei gas.
+Rimangono tuttavia alcune categorie di fenomeni scoperti sperimentalmente che non possono essere interpretati alla luce 
+di queste teorie classiche.
+
+Nel 1905 Einstein espose la sua teoria della relatività ristretta partendo da un esperimento ideale da lui immaginato. 
+A 16 anni, studiando la teoria dell' elettromagnetismo, aveva escogitato un paradosso: se vi muoveste alla velocità della luce 
+parallelamente a un raggio di luce che viaggia nello spazio vuoto, osservereste un campo ``statico'' di elettricità e dei 
+tracciati di campi magnetici. Ma Einstein ben sapeva che l'esistenza simultanea di campi elettrostatici e di campi magnetici 
+violerebbe la teoria dell'elettromagnetismo. 
+Bisognava far convivere le equazioni di Maxwell\index{Maxwell} con quelle di Newton.
+
+Einstein si trovò di fronte a un' alternativa per risolvere questo paradosso: era sbagliata la teoria elettromagnetica
+oppure lo era la cinematica classica, che ammette l'esistenza di un osservatore che può viaggiare solidale con un raggio luminoso? 
+
+Einstein puntò sulla teoria elettromagnetica e andò in cerca di una variante alle teorie cinematiche di Newton e Galileo. 
+Questa nuova cinematica, che sta alla base della relatività ristretta, vieta a qualsiasi osservatore (dotato di massa) 
+di seguire solidarmente un raggio di luce.
+
+Infine, vale la pena ricordare che quando i risultati sperimentali della fisica classica e della teoria della 
+relatività appaiono in disaccordo, ha sempre vinto la relatività.
+
+\section{Postulati di Einstein\index{Einstein!postulati di}\index{postulato!di Einstein}}
+La teoria della relatività si fonda su due postulati che riportiamo qui di seguito:
+\begin{post}[Principio di relatività speciale]
+Tutte le leggi fisiche sono invarianti per traslazioni uniformi
+\end{post}
+\begin{post}[Invarianza della velocità della luce]
+La velocità della luce nel vuoto è uguale in tutti i sistemi di riferimento
+\end{post}
+
+Dobbiamo trovare una la forma di una generica trasformazione che rispetti questi due postulati. 
+Lo facciamo nella prossima sezione.
+
+\subsection{Trasformate di Lorentz\index{trasformate!di Lorentz|(}\index{trasformazioni!di Lorentz|(}\index{Lorentz}}
+Le trasformate i Lorentz sostituiscono le trasformate di Galileo della meccanica classica.
+Un'altra caratteristica desiderabile per queste trasformazioni è che per velocità basse rispetto a quelle della luce 
+le trasformate di Lorentz tendono a quelle di Galileo, infatti ci aspettiamo che la meccanica classica, che descrive così
+bene il moto di treni, automobili, palle di cannone e altri oggetti ordinari, sia contenuta in questa teoria più estesa.
+Ricaviamo nel seguito la forma esplicita di queste trasformazioni.
+
+La funzione che trasforma le coordinate di un sistema di riferimento 
+a quelle di un altro deve essere lineare. Un'applicazione si dice lineare se gode di due proprietà:
+\begin{itemize}
+ \item omogeneità: $f(\alpha \ve x) = \alpha f(\ve x)$, $\alpha \in \mathchar{R}$ 
+ \item additività: $f(\ve x + \ve y) = f(\ve x) + f(\ve y)$
+\end{itemize}
+ 
+Infatti, immaginando che l'applicazione non sia lineare, per esempio: $x'=kx^2$, otteniamo dei risultati assurdi. 
+Se mettessimo una sbarra tra $0$ e $1$ questa misura $\Delta x=1-0=1$, 
+nel nuovo sistema di riferimento misura: $k\cdot 1^2-k\cdot 0^2=k$.
+Se ora mettessimo la sbarra tra $2$ e $1$ nel primo sistema di riferimento misurerà ancora $1$, mentre nel secondo ù
+si avrebbe $k(2^2-1^2)=3k$ ovvero spostando la sbarra nel secondo sistema di riferimento la sua lunghezza cambia: 
+assurdo per l'ipotesi di omogeneità dello spazio; inoltre l'applicazione deve essere anche additiva, 
+perché la lunghezza di due sbarre affiancate deve essere la somma dell'unica sbarra avente lunghezza 
+uguale nel primo sistema di riferimento alla somma delle lunghezze delle due sbarre nel primo sistema di riferimento. 
+
+Consideriamo il sistema di riferimento $Oxy$ fermo e $O'x'y'$ che si muove rispetto ad $O$ di moto rettilineo 
+uniforme con velocità di trascinamento $u$ nella direzione dell'asse $x$ crescente. L'applicazione è lineare, 
+quindi (in due dimensioni spaziali), in generale:
+\[\left\{
+\begin{array}{l}
+x'=\lambda_{11}x+\lambda_{12}y+\lambda_{14}t\\
+y'=\lambda_{21}x+\lambda_{22}y+\lambda_{24}t\\
+t'=\lambda_{41}x+\lambda_{42}y+\lambda_{44}t\\\end{array}\right.
+\]
+Dove troviamo un sistema con 9 incognite. Facciamo alcune ipotesi aggiuntive:
+\begin{itemize}
+\item[-] al tempo $t=t'=0$ gli orologi coincidono e anche i sistemi di riferimento $O\equiv O'$, in particolare per $t=0$ e $x=0$ segue $x'=0$ cioè
+\[x'=\lambda_{11}x+\lambda_{12}y+\lambda_{14}t\]
+\[0=\lambda_{11}\cdot 0+\lambda_{12}y+\lambda_{14}\cdot 0\]
+\[\lambda_{12}=0\]
+\item[-] come sopra:
+\[t'=\lambda_{41}x+\lambda_{42}y+\lambda_{44}t\]
+\[0=0+\lambda_{42}y+0\]
+\[\lambda_{42}=0\]
+\item[-] la traslazione del sistema in moto è orizzontale, quindi $y'=0\Leftrightarrow y=0$ sempre.
+\[\lambda_{21}=0\]
+\[\lambda_{24}=0\]
+
+\end{itemize}
+
+Se mettiamo una sbarra verticalmente con un estremo in $O'$, questo misura che la lunghezza è $1$. 
+La sbarra si muove con $O'$ e quindi questa è la lunghezza a riposo. Questa lunghezza a riposo dovrà essere uguale anche se è osservata da $O$. Mettiamo la sbarra ferma rispetto ad $O'$, quindi $O$ vede una lunghezza:
+\[y=\frac{1}{\lambda_{22}}\]
+mettiamo ora la sbarra ferma rispetto a $O$, $O'$ vede una lunghezza:
+\[y'=\lambda_{22}\]
+Le due situazioni sono simmetriche e quindi non esistendo un sistema privilegiato le due grandezze devono essere uguali:
+\[\lambda_{22}=\frac{1}{\lambda_{22}}\qquad\lambda^2_{22}=1\]
+Si scarta la soluzione negativa, in quanto si vuole che gli assi abbiano lo stesso verso.
+
+\parbox[]{\textwidth}{
+Seguiamo il moto dell'origine del sistema $O'$. Qui, per ogni istante:
+\[x'=0\]
+Per $O$ lo stesso moto è descritto da:
+\[x=ut\qquad x-ut=0\]
+Ci si aspetta allora un'equazione del tipo
+\[x'=\lambda(x-ut)\]
+}
+
+A $t=0$, $O\equiv O'$, $t=t'$ scatta un'onda luminosa dalle origini, questa ha un fronte sferico con raggio $R$ e per il secondo principio di Einstein ha velocità $c$ uguale in tutti e due i sistemi. Il sistema $O'$ sta arrivando da sinistra, passa in coincidenza con $O$, si sincronizzano gli orologi e parte il fronte d'onda. I due osservatori osservano un fronte d'onda che ha centro nei propri sistemi di riferimento, anche se non sono più coincidenti:
+\[x^2+y^2+z^2=R^2=(ct)^2\]
+\[x'^2+y'^2+z'^2=R'^2=(ct')^2\]
+\[x^2+y^2+z^2-ct^2=0=x'^2+y'^2+z'^2-(ct')^2\]
+\[x^2-c^2t^2=x'^2-c^2t'^2=\lambda^2(x-ut)^2-c^2(\lambda_{41}x+\lambda_{44}t)^2=\]
+\[=\lambda^2x^2+\lambda^2 u^2t^2-2\lambda^2 xut-c^2\lambda_{41}^2x^2-c^2\lambda_{44}^2t^2-2c^2\lambda_{41} x\lambda_{44} t\]
+Risolvendo in $\lambda^2$, $\lambda_{41}^2$ e $\lambda_{44}^2$ si ottiene un sistema di tre incognite e tre equazioni:
+\[\left\{
+\begin{array}{l}
+1=\lambda^2-c^2\lambda_{41}^2\\
+-c^2=\lambda^2u^2-c^2\lambda_{44}^2\\
+0=-2\lambda^2u-2c^2\lambda_{41}\lambda_{44}\\
+\end{array}
+\right.\quad \left\{
+\begin{array}{l}
+\lambda_{41}^2=\frac{\lambda^2-1}{c^2}\\
+\lambda_{44}^2=\frac{c^2+\lambda^2u^2}{c^2}\\
+-\lambda^2u=c^2\lambda_{41}\lambda_{44}\\
+
+\end{array}\right.\]
+Ci ricordiamo dell'ultima espressione che $\lambda_{41}\lambda_{44}<0$
+\[\lambda^4u^2=c^4\lambda_{41}^2\lambda_{44}^2=c^4\frac{\lambda^2-1}{c^2}\frac{c^2+\lambda^2u^2}{c^2}=\]
+\[=(\lambda^2-1)(c^2+\lambda^2u^2)=-c^2-\lambda^2u+\lambda^2c^2+\lambda^4u^2\]
+\[0=-c^2-\lambda^2u^2+\lambda^2c^2\]
+\[\lambda^2=\frac{c^2}{c^2-u^2}=\frac{1}{1+\frac{u^2}{c^2}}\]
+\[\lambda=\dfrac{1}{\sqrt{1-\left(\dfrac{u}{c}\right)^2}}=\dfrac{1}{\sqrt{1-\beta^2}}=\gamma\]
+\[\lambda_{41}^2=\frac{\lambda^2-1}{c^2}=\frac{\beta^2}{c^2(1-\beta^2)}\]
+\[\lambda_{41}=\pm\frac{\beta}{c\sqrt{1-\beta^2}}\]
+\[\lambda_{44}^2=\frac{c^2+\lambda^2u^2}{c^2}=\frac{1}{1-\beta^2}\]
+\[\lambda_{44}=\pm\frac{1}{\sqrt{1-\beta^2}}\]
+Diamo segno positivo a $\lambda_{44}$ e negativo a $\lambda_{41}$, in quanto se consideriamo un istante molto prossimo al momento della partenza allora $x\rightarrow 0$, $t'$ deve essere positivo (il tempo scorre nello stesso verso) e quindi $\lambda_{44}>0$.
+
+Nei calcoli precedenti abbiamo definito le quantità:
+\begin{equation}
+\beta = \dfrac{v}{c} 
+\end{equation}
+
+\begin{equation}
+ \gamma = \dfrac{1}{\sqrt{1-\beta^2}} = \dfrac{1}{\sqrt{1 - \frac{v^2}{c^2}}}
+\end{equation}
+
+Quindi alla fine le trasformazioni cercate sono le seguenti:
+\begin{equation}
+\left\{
+\begin{array}{l}
+x^\prime=\dfrac{x-vt}{\sqrt{1-\beta^2}}\\
+y^\prime=y\\
+z^\prime=z\\
+t^\prime=\dfrac{t-\frac{\beta}{c}x}{\sqrt{1-\beta^2}}
+\end{array}\right.
+\end{equation}
+
+\subsection{Trasformate di Lorentz e Galileo}
+Verifichiamo che le trasformazioni trovate rispettano quel ``principio di corrispondenza'' accennato sopra, ovvero che la meccanica
+classica e le trasformazioni di Galileo vengano riprodotte per velocità ``ordinarie'', questo equivale a dire che se $u\ll c$,
+cioè se $\beta\rightarrow 0$ allora le trasformazioni di Lorentz si riducono a quelle di Galileo.
+\[\left\{
+\begin{array}{l}
+x^\prime=\dfrac{x-vt}{\sqrt{1-\beta^2}}\\
+y^\prime=y\\
+z^\prime=z\\
+t^\prime=\dfrac{t-\frac{\beta}{c}x}{\sqrt{1-\beta^2}}
+\end{array}\right.
+\quad \stackrel{\beta\rightarrow 0}{\longrightarrow} \quad
+\left\{
+\begin{array}{l}
+x^\prime=x-ut\\
+y'=y\\
+z'=z\\
+t'=t\\
+\end{array}\right.\]
+\index{trasformate!di Lorentz|)} \index{trasformazioni!di Lorentz|)}
+
+\subsection{Le trasformazioni di Lorentz}
+Lorentz ha quindi cercato una trasformazione di coordinate adatta per mantenere l’invarianza in forma delle equazioni di Maxwell. 
+Riassumiamo le trasformazioni (riportando una sola dimensione spaziale):
+\begin{equation}\label{Lorentz_riass}
+  \left\{\begin{array}{ll}
+   x' = \gamma \left(x - vt \right) \\
+   t' = \gamma \left(t - \dfrac{v}{c^2}x \right)
+  \end{array}\right.
+\end{equation}
+
+Come notiamo, Lorentz ha apportato due modifiche alle trasformazioni
+di Fitzgerald. Ha lasciato invariata la contrazione delle lunghezze, ma ha
+aggiunto una dilatazione dei tempi. Il fattore davanti a $t$ (inserito per
+analogia) non bastava infatti per avere l’invarianza in forma: Lorentz ha
+dovuto anche introdurre il termine $- \frac{v}{c^2} x$ (che è a tutti gli effetti un tempo)
+nell'equazione dei tempi.
+
+Con questa nuova trasformazione si verifica che:
+\begin{equation}
+\left\{
+  \begin{array}{ll}
+  \dfrac{\partial E}{\partial t} = - \gamma v \dfrac{\partial E'}{\partial x'} - \gamma \dfrac{\partial E'}{\partial t'} \\
+  \dfrac{\partial E}{\partial x} = \gamma \dfrac{\partial E'}{\partial x'} - \dfrac{\gamma v}{c^2}\dfrac{\partial E'}{\partial t'}                
+  \end{array}\right.
+\end{equation}
+
+e derivando nuovamente:
+\begin{equation}
+\left\{
+  \begin{array}{ll}
+  \dfrac{\partial^2 E}{\partial t^2} = - \gamma^2 v^2 \dfrac{\partial^2 E'}{\partial x'^2} - 2 \gamma v \dfrac{\partial^2 E'}{\partial x' \partial t'} + \gamma^2 \dfrac{\partial^2 E'}{\partial t'^2}\\
+  \dfrac{\partial^2 E}{\partial x^2} = \gamma^2 \dfrac{\partial^2 E'}{\partial x'^2} - 2 \dfrac{\gamma^2 v}{c^2}\dfrac{\partial E'}{\partial x' \partial t'} + \dfrac{\gamma^2 v^2}{c^4}\dfrac{\partial E'}{\partial x' \partial t'}
+  \end{array}\right.
+\end{equation}
+Le derivate miste si semplificano. Inoltre sapendo che sono verificate le seguenti identità:
+\begin{equation}
+\left\{
+  \begin{array}{ll}
+  \dfrac{v^2}{c^2 \left(1 - \frac{v^2}{c^2}\right)} - \dfrac{1}{\left(1 - \frac{v^2}{c^2}\right)} = -1 \\
+  \dfrac{1}{c^2 \left(1 - \frac{v^2}{c^2}\right)} - \dfrac{v^2}{c^4 \left(1 - \frac{v^2}{c^2}\right)} = \dfrac{1}{c^2} \\
+  \end{array}\right.
+\end{equation}
+otteniamo l’equazione delle onde nelle nuove coordinate:
+\begin{equation}
+ \frac{1}{c^2} \dfrac{\partial^2 E}{\partial t^2} - \dfrac{\partial^2 E}{\partial x^2} = 0
+\end{equation}
+
+equazione che ha conservato intatta la forma che aveva come conseguenza
+delle equazioni di Maxwell. Le trasformazioni di Lorentz nascono proprio
+per mantenere questa invarianza in forma.
+
+\section{Effetti relativistici\index{effetti relativistici}}
+In questa sezioni presenteremo alcuni particolari effetti relativistici che si allontanano dal ``senso comune'' e sono peculiari
+della teoria della relatività, essi sono:
+\begin{itemize}
+ \item la contrazione delle lunghezze;
+ \item la dilatazione dei tempi;
+ \item la perdita del concetto di simultaneità assoluta;
+ \item la composizione delle velocità;
+\end{itemize}
+
+\subsection{Contrazione delle lunghezze\index{contrazione delle lunghezze}}
+\begin{figure}[htbp]
+   \centering
+   \includegraphics[scale=0.5]{immagini/relspec/beta_gamma}
+   \caption{Variazione di $\gamma$ in funzione di $\beta$.}
+\end{figure}
+Consideriamo l'effetto delle trasformazioni di Lorentz sulla misura di lunghezze.
+Posizioniamo un'asta con estremi $A$ e $B$ ferma rispetto ad $O'$, 
+sistema di riferimento inerziale con velocità $u$ rispetto ad $O$.
+$O$ misura nello stesso istante le posizione di $A$ e di $B$, quindi $t_A\equiv t_B$:
+\[\left\{
+\begin{array}{l}
+x'_A=\frac{x_A-ut_A}{\sqrt{1-\beta^2}}\\
+x'_B=\frac{x_B-ut_B}{\sqrt{1-\beta^2}}\\
+\end{array}
+\right.\]
+\begin{align*}
+l' &= x'_B-x'_A=\frac{x_B-x_A-ut_B+ut_A}{\sqrt{1-\beta^2}}= \\
+&= \frac{x_B-x_A-u(t_B-t_A)}{\sqrt{1-\beta^2}}=\frac{x_B-x_A}{\sqrt{1-\beta^2}}\\
+&=\gamma l
+\end{align*}
+Quindi abbiamo:
+\begin{equation}
+l=\frac{l'}{\gamma}
+\end{equation}
+Considerando che $0<\beta<1$ il che implica $\gamma>1$ si ha che $l<l'$, abbiamo che $O$ osserva un oggetto (in moto) 
+la cui lunghezza è contratta rispetto alla lunghezza a riposo.
+
+\subsection{Dilatazione dei tempi\index{dilatazione dei tempi}}
+Consideriamo ora eventi osservati da $O'$ nello stesso spazio ($x'_A\equiv x'_B$) a distanza di tempo $\tau'=t'_B-t'_A$.
+\[t'=\gamma\left(t-\frac{\beta}{c}x\right)\]
+Per simmetria posso dire direttamente che:
+\[t=\gamma\left(t'+\frac{\beta}{c}x'\right)\]
+quindi abbiamo che:
+\[t_A=\gamma\left(t'_A+\frac{\beta}{c}x'_A\right)\]
+\[t_B=\gamma\left(t'_B+\frac{\beta}{c}x'_B\right)\]
+e l'intervallo temporale tra i due eventi $\tau$ è dato da:
+\begin{equation}
+\tau=t_B-t_A=\gamma\left(t'_B-t'_A+\frac{\beta}{c}\left(x'_B-x'_A\right)\right)=\gamma\left(t'_B-t'_A\right)=\gamma\tau'
+\end{equation}
+Essendo $\gamma>1$ si ha che $\tau>\tau'$ cioè secondo $O$ il tempo misurato da $O'$ scorre più lentamente.
+
+\begin{Es}[produzione e decadimento di mesoni $\pi^+$]
+Se lanciamo un protone a colpire un altro protone fermo si può verificare la seguente ``reazione'':
+\[p+p\rightarrow p+n+\pi^+\]
+Durante la quale viene prodotto un mesone $\pi$ o pione. Questo decade nel seguente modo:
+\[\pi^+ \rightarrow \mu ^+ + \nu_{\mu}\]
+
+Se ci poniamo nel sistema di riferimento del mesone (ossia se lo cavalchiamo)
+osserviamo un tempo di vita media $\tau'=\SI{1.88E-8}{\second}$. Il mesone ha rispetto al laboratorio $\beta=0.99$. Il laboratorio dalla distanza percorsa dal mesone calcola una vita media diversa:
+\[\tau=\gamma\tau'=\frac{\tau'}{\sqrt{1-\beta^2}}\simeq 7.1\tau'=\SI{1.3E-7}{\second} \]
+La distanza percorsa dal mesone, prima di decadere, osservata dal laboratorio è quindi:
+\[d=\tau u=\tau \beta c\simeq \SI{39}{\metre} \]
+\end{Es}
+
+\subsection{Perdita del concetto di simultaneità assoluta\index{simultaneità!}}
+
+\begin{figure}[htbp]
+   \centering
+   \includegraphics[scale=0.2]{immagini/relspec/pistoleri}
+   \caption{Due pistoleri relativistici.}
+   \label{pistoleri}
+\end{figure}
+
+I due pistoleri (Fig.\@ \ref{pistoleri}) sparano quando la luce gli raggiunge. 
+Essi sono in un sistema solidale con la luce e quindi vedono contemporaneamente la luce della lampadina. 
+Per il capostazione ``fermo'' invece è il pistolero di sinistra ad essere investito per prima dalla luce, 
+quindi il pistolero a destra muore, mentre quello di sinistra no.
+Gli eventi simultanei per $O'$ non sono tali per $O$, bisogna rivedere il concetto di tempo assoluto.
+
+\subsection{Composizione delle velocità\index{composzione delle velocità!relativistiche}}
+Come si potrà immaginare la composizione delle velocità non segue più le trasformazioni di Galileo. 
+Infatti, supponiamo di osservare una astronave che si muove con $v = 0.8 c$ rispetto ad un sistema di 
+riferimento $O$ e contestualmente abbiamo un sistema di riferimento
+$O'$ che si muove con velocità $u = 0.8 c$ in direzione opposta a quella dell'astronave.
+Le trasformazioni di Galileo ci direbbero che l'astronave $O'$ misura per $O$ la velocità:
+\[
+ v' = v - u
+\]
+ossia $v' = 0.8c + 0.8c = 1.6c$ una velocità maggiore di quella della luce, ma questo è impossibile! È necessario
+cambiare la legge di composizione delle velocità.
+
+La velocità rimane sempre la derivata del vettore posizione: $v_x=\frac{\ud x}{\ud t}$, 
+quindi andiamo a calcolare queste derivate nel sistema traslato per trovare le leggi di composizione delle velocità:
+\begin{equation}\label{composizione_vel_x}
+\begin{split}
+  v'_{x'} &= \frac{\ud x'}{\ud t'}=\frac{\ud x'}{\ud t}\frac{\ud t}{\ud t'}=\frac{\ud x'}{\ud t}\dfrac{1}{\frac{\ud t'}{\ud t}}= \\
+	  &= \gamma\left(\frac{\ud x}{\ud t}-u\right)\dfrac{1}{\gamma\left(1-\dfrac{\beta}{c}\dfrac{\ud x}{\ud t}\right)} = \dfrac{v_x-u}{1-\dfrac{\beta}{c}v_x}
+\end{split}
+\end{equation}
+\begin{equation}\label{composizione_vel_y}
+\begin{split}
+  v'_{y'} &= \frac{\ud y'}{\ud t'}=\frac{\ud y}{\ud t'}=\frac{\ud y}{\ud t}\frac{\ud t}{\ud t'}=v_y\frac{1}{\frac{\ud t'}{\ud t}}= \\
+	  &= \dfrac{v_y}{\gamma\left(1-\dfrac{\beta}{c}\dfrac{\ud x}{\ud t}\right)}=\dfrac{v_y\sqrt{1-\beta^2}}{1-\dfrac{\beta}{c}v_x}
+\end{split}
+\end{equation}
+Un'analoga equazione vale per $v'_{z'}$ essendo come $v'_{y'}$ una velocità trasversa rispetto ad $u$.
+\[\lim_{\beta\rightarrow 0}v'_{x'}=v_x-u\qquad \lim_{\beta\rightarrow 0} v'_{y'}=v_y\]
+cioè la composizione delle velocità secondo Galileo.
+
+\begin{Es}[risolviamo il problema precedente]
+Nell'esempio di prima:
+\[\begin{array}{ll}
+   v_x = 0.8 c\\
+   u = - 0.8 c
+  \end{array}
+\]
+applicando la \ref{composizione_vel_x} abbiamo:
+\[v'_x=\frac{v_x - u}{1-\frac{\beta}{c}v_x}=\frac{0.8c - (- 0.8c)}{1+\frac{0.8}{c}0.8c} \approx 0.98c\]
+ossia $v'_x < c$, come ci aspettavamo.
+\end{Es}
+
+\begin{Es}[decadimento $\pi^0$]
+$\pi^0$ decade con un decadimento elettromagnetico del tipo:
+\[\pi^0\rightarrow \gamma\gamma\]
+Per la conservazione della quantità di moto i due fotoni devono avere velocità opposte, $c$ misurate sia dal sistema del laboratorio ($O$) sia dal sistema in moto con il $\pi^0$, $O'$. Supponiamo che i fotoni si propaghino secondo l'asse $x$ e che il mesone si muovesse alla velocità $u$ verso destra rispetto ad $O$. Per Einstein la velocità dei due fotoni vista da $O$ e da $O'$ è uguale.
+Per il fotone che va a destra:
+\[v_x=\frac{v'_{x'}+u}{1+\frac{\beta}{c}v'_{x'}}=\frac{c+u}{1+\frac{u}{c^2}c}=c\]
+Per l'altro:
+\[v_x=\frac{-c+u}{1-\frac{u}{c^2}(-c)}=-c\]
+\end{Es}
+
+\section{Massa\index{massa!relativistica}}
+Dalla conservazione della quantità di moto ricaviamo la massa relativistica.
+
+\begin{Es}[quantità di moto classica vs relativistica]
+\begin{figure}[htbp]
+   \centering
+   \includegraphics[scale=0.5]{immagini/relspec/massa_relat.png}
+   \caption{Altri due pistoleri relativistici. I due pistoleri (identici) sono in moto relativo, armati di pistole identiche e con proiettili
+identici.}
+\end{figure}
+
+Siano $O$ e $O'$ due osservatori dotati di due pistole identiche con proiettili identici. 
+$O'$ si muove verso destra rispetto ad $O$ con velocità costante $\ve v$\footnote{Gli assi $x$ e $x'$ non coincidono, sono sfasati, 
+ma questo conta poco perché considerando le velocità, cioè derivando, il problema scompare.}. 
+$O'$ spara in direzione di $O$ cioè nel verso delle $y$ decrescenti. $O$ vede il suo proiettile con velocità:
+\[\dot y'_{O'}=-v\qquad\dot{x'}_{O'}=0\]
+
+Dove abbiamo indicato con un puntino la derivata rispetto al tempo ($\dot y = \dfrac{\partial y'}{\partial t'}$ è quindi una
+velocità), con l'apice il fatto che è una quantità misurata dall'osservatore $O'$ e con il pedice che è il proiettile sparato da
+$O'$.
+
+$O$ vede il proiettile di $O'$ con velocità:
+\[\dot y_{O'}=\frac{\dot y'_{O'}\sqrt{1-\beta^2}}{1-\frac{\beta}{c}\dot x'_{O'}}=-\sqrt{1-\frac{u^2}{c^2}}v\]
+
+$O$ spara a $O'$ nel verso delle $y$ crescenti e misura la velocità del proiettile:
+\[\dot y_{O}=v\qquad \dot x_{O}=0\]
+e $O'$ vede il proiettile di $O$ con:
+\[\dot y'_{O}=\sqrt{1-\frac{u^2}{c^2}}v\]
+
+La quantità di moto si deve conservare e sappiamo che prima che i due pistoleri sparassero era uguale a zero quindi abbiamo che 
+l'osservatore $O$ descrive il sistema con la seguete equazione di conservazione della quantità di moto:
+\[m_{O}U+m_{O'}\dot y_{O'}=0\]
+\[m_{O'}=\frac{m_O v}{\sqrt{1-\frac{u^2}{c^2}}v}=\frac{m_O}{\sqrt{1-\frac{u^2}{c^2}}}\]
+
+Vediamo che entrambi gli osservatori concordano sulla seguente osservazione: se ciascuno degli osservatori indica la massa del proiettile con la quantità $m_0$ (che, per ragioni che saranno evidenti nelle
+  prossime righe è detta ``massa a riposo''. Ossia:
+\begin{itemize}
+ \item $O: m_{O} = m_0$;
+ \item $O': m_{O'} = m_0$;
+\end{itemize}
+la massa del proiettile in moto (indicata semplicemente con $m$) diventa:
+\[m=\frac{m_0}{\sqrt{1-\beta^2}}=\gamma m_0\]
+Vediamo che la massa di una particella misurata da un'osservatore in moto varia con la velocità del moto relativo e in varticole se $v$ 
+diventa prossimo a $c$ abbiamo che:
+\[\beta\rightarrow 1\Rightarrow m\rightarrow +\infty\]
+\end{Es}
+
+\section{Quantità di moto\index{quantità di moto!relativistica}}
+\[p=mv=\frac{m_0}{\sqrt{1-\beta^2}}\beta c=\gamma m_0 v\]
+$\beta$ della particella. Con questa nuova definizione di quantità di moto essa si conserva ancora, anche in contesto relativistico.
+\[\beta\rightarrow 1\Rightarrow p\rightarrow +\infty\]
+
+\begin{Es}[quantità di moto classica vs relativistica]
+\begin{figure}[htbp]
+   \centering
+   \includegraphics[scale=0.5]{immagini/relspec/Q_rel1}
+   \caption{(a) prima dell'urto; (b) dopo l'urto.}
+\end{figure}
+Urto frontale tra due particelle con stessa massa e velocità, sull'asse $x$. Dopo l'urto le particelle possono andare su qualunque direzione, ipotizziamo quella verticale. La quantità di moto si conserva, infatti all'inizio:
+\[p_x=mv_x-mv_x=0\qquad p_y=mv_y-mv_y=0\]
+e dopo l'urto:
+\[p_x=mv_x-mv_x=0\qquad p_y=mv_y-mv_y=0\]
+Quindi sembra che la conservazione della quantità di moto classica funzioni. Cambiamo sistema di riferimento, 
+consideriamo quello solidale con la seconda particella. Essa prima dell'urto si muove con velocità $u=v$ verso sinistra. 
+Utilizzando le composizioni delle velocità relativistiche:
+\begin{figure}[htbp]
+   \centering
+   \includegraphics[scale=0.5]{immagini/relspec/Q_rel2}
+   \caption{(a) prima dell'urto; (b) dopo l'urto.}
+\end{figure}
+
+\[\left\{
+\begin{array}{l}
+p'_{x'}=p'_{x'_1}=\dfrac{v+v}{1+\dfrac{v^2}{c^2}}m=\dfrac{2v}{\dfrac{c^2+v^2}{c^2}}m=2mu\dfrac{1}{1+\beta^2}\\
+p'_{y'}=0\\
+\end{array}
+\right. \]
+\[\left\{
+\begin{array}{l}
+p'_{x'}=2mv'_{x'}=2mu\\
+p'_{y'}=0\\
+\end{array}
+\right. \]
+La quantità di moto fallisce. Bisogna considerare la correzione della massa.
+\end{Es}
+\section{Energia Relativistica\index{energia!relativistica}}
+\label{energia_cinetica_relativistica}
+\subsection{Teorema lavoro--energia\index{teorema!lavoro--energia!relativistico}}
+\begin{figure}[htbp]
+   \centering
+   \includegraphics[scale=0.6]{immagini/relspec/V_K}
+   \caption{Velocità in funzione dell'energia cinetica con diverse masse.}
+\end{figure}
+Per far funzionare il teorema $L=\Delta K$ bisogna cambiare la definizione di energia cinetica.\index{energia!cinetica!relativistica}
+\[m=\frac{m_0}{\sqrt{1-\beta^2}}\]
+\[m^2(1-\beta^2)=m_0^2\quad m^2c^2-m^2v^2=m_0^2c^2\]
+\[2mc^2\ud m-2mv^2\ud m-2m^2v\ud v=0\]
+\[c^2\ud m=v^2\ud m+mv\ud v\]
+Considerando solo una forza diretta come l'asse $x$:
+\begin{equation}
+L= \left(m v_B-m v_A \right)c^2 
+\end{equation}
+
+Se $K(0)=0$ in accordo con quella classica:
+\[K(B)=K(B)-K(0)=\Delta K=(m_B-m_0)c^2\quad K=mc^2-m_0c^2\]
+\[\underbrace{m_0c^2}_{\text{energia a riposo}}+\underbrace{K}_{\text{energia cinetica}}=\underbrace{mc^2}_{\text{energia totale}}\]
+\[E=mc^2\qquad \Delta E=\Delta K=L\]
+\[K=mc^2-m_0c^2=\frac{m_0c^2}{\sqrt{1-\beta^2}}-m_0c^2=m_0c^2\left(\frac{1}{\sqrt{1-\beta^2}}-1\right)=m_0c^2\left(\gamma-1\right)\]
+
+Per far funzionare il teorema $L=\Delta K$ bisogna cambiare la definizione di energia cinetica.\index{energia!cinetica!relativistica}
+\[m=\frac{m_0}{\sqrt{1-\beta^2}}\]
+\[m^2(1-\beta^2)=m_0^2\quad m^2c^2-m^2v^2=m_0^2c^2\]
+\[2mc^2\ud m-2mv^2\ud m-2m^2v\ud v=0\]
+\[c^2\ud m=v^2\ud m+mv\ud v\]
+Considerando solo una forza diretta come l'asse $x$:
+\[L=\int_A^B \ve F\ud \ve x=\int\frac{\ud \ve p}{\ud t}\ud \ve x=\int\ud \ve p\,\frac{\ud\ve x}{\ud t}=\int \ve v\ud \ve p=\int \ve v\ud(m\ve v)=\Delta K=\]
+\[=\!\int(\ud m\ve v+m\ud\ve v)\ve v=\!\!\int\!(\ud mv^2+mv\ud v)=c^2\!\!\!\int_{v_A}^{v_B}\!\!\!\!\ud m=\left(m\left(v_B\right)-m\left(v_A\right)\right)c^2\]
+Se $K(0)=0$ in accordo con quella classica:
+\[K(B)=K(B)-K(0)=\Delta K=(m_B-m_0)c^2\quad K=mc^2-m_0c^2\]
+\[\underbrace{m_0c^2}_{\text{energia a riposo}}+\underbrace{K}_{\text{energia cinetica}}=\underbrace{mc^2}_{\text{energia totale}}\]
+\[E=mc^2\qquad \Delta E=\Delta K=L\]
+\[K=mc^2-m_0c^2=\frac{m_0c^2}{\sqrt{1-\beta^2}}-m_0c^2=m_0c^2\left(\frac{1}{\sqrt{1-\beta^2}}-1\right)=m_0c^2\left(\gamma-1\right)\]
+
+\subsection{Energia cinetica classica}
+L'energia cinetica relativistica si riduce alla formula classica più una costante per per $v \ll c$:
+\[v\ll c\qquad m_0c^2\left(1+\frac{1}{2}\beta^2+\ldots-1\right)=\frac{1}{2}m_0\beta^2c^2=\frac{1}{2}m_0v^2\]
+
+\subsection{Urti ed energia}
+\[E=m_0c^2+K=mc^2\]
+
+\begin{figure}[htbp]
+   \centering
+   \includegraphics[scale=0.5]{immagini/relspec/urto_rel.png}
+   \caption{(a) prima dell'urto; (b) dopo l'urto. L'energia si conserva, ma viene ``ripartita'' diversamente dato che si sono formate
+nuove particelle.}
+\end{figure}
+
+Si creano nuove particelle. Non basta avere molta energia per creare nuove particelle, ma bisogna concentrarla.
+
+\section{Il triangolo relativistico\index{triangolo!relativistico}}
+Partiamo dalle seguenti:
+\begin{equation}
+\left\{
+\begin{array}{l}
+E=mc^2=\dfrac{m_0}{\sqrt{1-\beta^2}}c^2\\
+p=\dfrac{m_0}{\sqrt{1-\beta^2}}\beta c\\
+\end{array}\right.
+\quad\Rightarrow\quad
+\dfrac{p}{E}=\dfrac{\beta}{c}
+\quad\Rightarrow\quad\beta E=pc
+\end{equation}
+con qualche passaggio abbiamo che:
+\[E^2=\frac{m_0^2c^4}{1-\beta^2}\qquad E^2-\beta^2 E^2=m_0^2c^4\qquad E^2-p^2c^2=m_0^2c^4\]
+Alla fine possiamo scrivere che:
+\begin{equation}
+ E^2=(m_0c^2)^2+(pc)^2
+\end{equation}
+
+Tutte le relazioni di cui sopra possono essere facilmente ricordate con il cosiddetto ``triangolo relativistico'':
+\begin{figure}[htbp]
+   \centering
+   \includegraphics[scale=0.4]{immagini/relspec/Trg_rel.png}
+   \caption{Il ``triangolo relativistico''. È un utile strumento mnemonico, infatti, tra le grandezze indicate sui lati esistono relazioni 
+analoghe a quelle tra i lati di un triangolo rettangolo.}
+\end{figure}
+
+\subsubsection{Elettronvolt\index{elettronvolt}}
+La carica dell'elettrone vale circa $\SI{1.6E-19}{\coulomb}$. $\SI{1}{\electronvolt}$ è quell'energia che acquista un elettrone accelerato da una ddp di $\SI{1}{\volt}$
+\begin{equation}\label{eV_to_Joule}
+E=qV\qquad \electronvolt=q_e(\SI{1}{\volt})=\SI{1.6E-19}{\joule} 
+\end{equation}
+Molto usati sono i multipli: \kilo\electronvolt (si legge ``\textit{chev}''), \mega\electronvolt (``\textit{mev}''), 
+\giga\electronvolt (``\textit{gev}''), \tera\electronvolt (``\textit{tev}''), \peta\electronvolt (``\textit{pev}'').
+
+Anche le masse e le quantità di moto si possono esprimere in \electronvolt, combinando opportunamente con $c$.
+Sappiamo che:
+\[E=mc^2\]
+Quindi possiamo trovare, per esempio, le seguenti equivalenze:
+\begin{align}
+\SI{1}{\kilo\gram}c^2 &=\SI{1}{\kilo\gram}(\SI{3E8}{\metre\per\second})^2=\SI{9E16}{\joule}=\SI{5.62E35}{\electronvolt} \\
+\SI{1}{\electronvolt}/c^2 &=\SI{1.78E-36}{\kilogram}
+\end{align}
+Mentre la massa di un elettrone espessa in \electronvolt è data da:
+\[E_0 = m_0 c^2 \rightarrow m_0 = \dfrac{E_0}{c^2}\]
+quindi, sapendo che la massa a riposo dell'elettrone è $m_{e} = m_{0} = \SI{9.1E-31}{\kilo\gram}$ ed usando il fattore di 
+conversione \ref{eV_to_Joule} abbiamo:
+\begin{equation}
+\begin{split}
+  m_{e}c^2 &= (\SI{9,1E-31}{\kilo\gram})(\SI{3E8}{\metre\per\second})^2 = \dfrac{\SI{8.19E-14}{\joule}}{\SI{1.6E-19}{\joule\per\electronvolt}} = \\
+	   &= \SI{5.11E5}{\electronvolt} = \SI{511}{\kilo\electronvolt}
+\end{split}
+\end{equation}
+
+Quindi la massa di un elettrone è $m_e = \SI{511}{\frac{\kilo\electronvolt}{c^2}}$. Dato che $c$ è una costante spesso viene omessa (o posta
+uguale ad un'unità, vedi la sez. \ref{analisi-dimensionale-unita-naturali}, e allora si dice semplicemente che la massa di un elettrone
+è $\SI{511}{\kilo\electronvolt}$.
+
+\begin{Es}[decadimento particella strana]
+Si vuole determinare il momento finale dei prodotti del decadimento della $K_0$:
+\[K_0\rightarrow \pi^+\,\pi^-\]
+\[m_0^{K_0}=\SI[per=slash,eVcorrb=0.4ex]{500}{\mega\eVperc\squared} \qquad m_0^{\pi^+}=\SI{140}{\mega\eVperc\squared}\]
+\[\tau_{K_0}=\SI{0.9E-10}{\second} \]
+Nel sistema di $K_0$ l'impulso iniziale è nullo e l'impulso finale dei mesoni $\pi^{\pm}$ è:
+\[
+\ve p_i = p_{K_0}=0\quad \Rightarrow \quad \ve p_f=0 = \ve p_{\pi^+}+\ve p_{\pi^-}
+\]
+Poniamo:
+\[
+m_{0}^{\pi^{+}}=m_0^{\pi^{-}}=m_{\pi} \qquad m_0^{K_0}=m_{K}
+\]
+Inoltre sappiamo che il momento finale dei due mesoni è uguale in modulo:
+\[
+p_{\pi^+}=p_{\pi^-}=p_{\pi}\qquad E_i=E_f
+\]
+
+Quindi l'energia è data da:
+\begin{equation*}
+ \begin{split}
+   E_i &= m_{K}c^2 = E_f = \\
+       &= \sqrt{(m_0^{\pi^+}c^2)^2+p_{\pi^+}^2c^2}+\sqrt{(m_0^{\pi^-}c^2)^2+p_{\pi^-}^2c^2} = \\
+       &= 2 \sqrt{(m_\pi c^2)^2+p_{\pi}^2c^2}
+ \end{split}
+\end{equation*}
+
+da cui:
+\[m_{K}^2c^4=4(m_\pi c^2)^2+4p_{\pi}^2c^2\]
+\[p_\pi^2=\frac{m_{K}^2c^4-4(m_{\pi})^2c^4}{4c^2}=\frac{m_K^2c^2}{4}-m_\pi^2c^2\]
+\[p_\pi=c\sqrt{\frac{m_K^2}{4}-m_\pi^2}\]
+\end{Es}
+
+\section{Analisi dimensionale ed unità naturali}\label{analisi-dimensionale-unita-naturali}
+In base a quanto detto finora vediamo che possiamo stabilire una certa simmetria tra le misure 
+temporali e quelle spaziali, infatti anche nelle trasformazioni di Lorentz compare sempre la quantità
+$ct$ che ha le stesse dimensioni di $x$.
+
+Come detto sopra possiamo porre la costante $c=1$, proprio per indicare che essa è l'unità di misura rispetto alla
+quale misuriamo tutte le velocità.
+
+Se ora sottoponiamo le grandezze incontrate finora ad un'analisi dimensionale possiamo trovare conferma di questi
+parallelismi.
+
+Nell'analisi dimensionale ad ogni grandezza fisica si associa un numero (intero) naturale che consiste nell'esponente
+al quale viene elevata una delle grandezze fondamentali (in meccanica: lunghezza, tempo e massa) che lo compongono.
+Questi esponenti vengono detti ``dimensioni'' della grandezza sotto esame rispetto alla lunghezza, tempo, ecc.
+
+Si indicano le dimensioni di una grandezza usando le parentesi quadre $[...]$, per le grandezze fondamentali si usa:
+\begin{itemize}
+ \item $[L]$ per le lunghezze
+ \item $[T]$ per i tempi
+ \item $[M]$ per le masse
+\end{itemize}
+si può applicare questo discorso anche alle unità di misura.
+
+Ad esempio:
+\begin{itemize}
+ \item le dimensioni di una forza sono date da $[F] = [M][L][T]^{-2}$;
+ \item le dimensioni della costante elastica di una molla sono $[k] = [F][L]^{-1} = [M][T]^{-2}$;
+\end{itemize}
+
+Molto spesso ricorrendo alla analisi dimensionale è possibile ricavare la soluzione di un problema o almeno un suggerimento verso di essa.
+
+Per esempio, dato il problema seguente:
+\begin{quotation}
+ Dato un pendolo composta da un pesetto di massa $m$ legato ad un filo di lunghezza $l$ e sottoposto alla forza di gravità 
+(accelerazione di gravità $g$), trovare il periodo del pendolo.
+\end{quotation}
+Applicando l'analisi dimensionale sappiamo che stiamo cercando una grandezza, il periodo $T_p$, le cui dimensioni sono quelle di 
+un tempo: $[T_p] = [T]$.
+I dati che abbiamo a disposizione sono la massa $m$, la lunghezza del pendolo $l$ e l'accelerazione di gravità $g$ le cui dimensioni
+sono rispettivamente $[m]=[M]$, $[l] = [L]$, $[g] = [L][T]^{-2}$
+
+Quindi possiamo impostare la seguente equazione:
+\begin{equation}
+ T_p \propto m^{\alpha} l^{\beta} g^{\gamma}
+\end{equation}
+ovvero, dimensionalmente:
+\begin{equation}
+ [T_p] = [m]^{\alpha} [l]^{\beta} [g]^{\gamma}
+\end{equation}
+
+e quindi troviamo le seguenti equazioni dimensionali:
+\begin{equation}
+\left\{
+\begin{aligned}
+ 0 &= \alpha & & ([M])\\
+ 0 &= \beta + \gamma & & ([L])\\
+ 1 &= -2 \gamma & & ([T])
+\end{aligned}
+\right.
+\end{equation}
+che risolto restituisce $\alpha = 0$, $\beta = \frac{1}{2}$, $\gamma = - \frac{1}{2}$, ossia
+\begin{equation}
+ T_p \propto \sqrt{\frac{l}{g}}
+\end{equation}
+la soluzione esatta è data da:
+\begin{equation}
+ T_p = 2 \pi \sqrt{\frac{l}{g}}
+\end{equation}
+e si vede che la costante di proporzionalità (adimensionale) è data da $2 \pi$
+
+In relatività, lo spazio ed il tempo diventano grandezze derivate dalla grandezza fondamentale ``velocità'' quindi abbiamo:
+\begin{equation}
+ [c] = \dfrac{[L]}{[T]} = 0 \rightarrow [L] = [T]\end{equation}
+
+Inoltre dalla relazione $E = mc^2$ ricaviamo che:
+\begin{equation}
+ [E] = [M]\\
+\end{equation}
+
+Se facciamo uso della costante di Planck, ovvero della costante fondamentale della meccanica quantistica, 
+pari a:
+$h = 6,626 \times 10^{-34} J s = 4,136 \times 10^{-15} eV s$
+e stabiamo che anch'essa sia $h = 1$\footnote{molto spesso si usa invece di $h$ la quantita $\hbar$ (``acca tagliato'') detta
+costante di Dirac o costante di Plack ridotta pari a:
+\[\hbar = \dfrac{h}{2 \pi} \]
+e si pone $\hbar = 1$. Dal punto di vista dimensionale queste due condizioni sono identiche.}
+possiamo stabilire un'altra equivalenza tra grandezze fisiche ovvero, sapendo che 
+
+\begin{equation}
+ [h] = [E][T] = 0 \rightarrow [E] = [M] = [T]^{-1} = [L]^{-1}
+\end{equation}
+
+Quindi per l'analisi dimensionale valgono le seguenti uguaglianze:
+\begin{equation}
+ \left\{
+ \begin{aligned}
+  [L] &= 1\\
+  [T] &= 1\\
+  [M] &= -1\\
+  [E] &= -1
+ \end{aligned}\right.
+\end{equation}
+
+
+
+\section{Un nuovo invariante relativistico}
+
+Giunti a questo punto, e ricordando come abbiamo utilizzato i postulati della relatività per ottenere
+le trasformazioni di Lorentz, possiamo verificare l'esistenza di una nuova quantità invariante:
+\begin{equation}\label{ds2}
+ ds^2 = dx^2 + dy^2 + dz^2 - ct^2
+\end{equation}
+
+$ds^2$ in \ref{ds2} è noto come ``intervallo spaziotemporale'' ed è una quantità molto importante che definisce
+numerose proprietà geometriche dello spaziotempo tra cui la sua metrica e la sua struttura causale.
+
+Per ora ci limitiamo ad osservare due fatti: (1) la \ref{ds2} assomiglia alla generalizza a quattro dimensioni
+della formula per la lunghezza di un vettore nello spazio:
+\[ l^2 = x^2 + y^2 + z^2 \]
+con la differenza che il tempo ha un segno meno davanti, questa è una differenza non da poco, in un certo senso possiamo
+dire che è ciò che distingue le coordinate spaziali da quelle temporali.
+
+Inoltre, se con i vettori nello spazio ``usuale'' ($\field{R}^3$ euclideo) la lunghezza era una quantità sempre positiva,
+abbiamo che \ref{ds2} può essere anche negativa o nulla, in particolare si dice che un vettore nello spaziotempo individuato
+dalle sue componenti spaziotemporali $(x,y,z,t)$ è:
+\begin{itemize}
+ \item di tipo spazio (in inglese \textit{space-like}), se $ds^2 > 0$
+ \item di tipo tempo (in inglese \textit{time-like}), se $ds^2 < 0$
+ \item di tipo luce (in inglese \textit{light-like}), se $ds^2 = 0$
+\end{itemize}
+
+Vediamo infatti che un raggio di luce occupa sempre punti tali che:
+\[ x^2 + y^2 + z^2 = ct^2 \]
+infatti si propaga con velocità $c$, quindi:
+\[ ds^2 = 0 \]
+
+Queste distinzioni acquisteranno ancora più significato quando parleremo della \textit{struttura causale} dello spaziotempo.

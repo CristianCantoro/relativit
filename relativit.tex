@@ -1,0 +1,134 @@
+%& -shell-escape -enable-write18 
+% la riga sopra non funziona!
+\typeout{*******************************************************************************}
+\typeout{RENDERING RIASSUNTI DI FISICA INIZIATO}
+\typeout{*******************************************************************************}
+\typeout{Qualcuno, non sapendo verso quali disgrazie va incontro, si accinge a renderizzare: buona fortuna!}
+\typeout{}\typeout{}\typeout{}
+
+%********************************DICHIARAZIONE DOCUMENTO***********************
+%***********PACCHETTI GRAFICI E THUMBDF E HYPEREF******************************
+
+\documentclass[a4paper,12pt,twoside,openany,italian]{book}
+\usepackage{ifpdf}
+
+\ifpdf
+\typeout{RENDERING PDF - PDF - PDF - PDF}
+\usepackage[pdftex]{graphicx}
+\DeclareGraphicsExtensions{.pdf,.png,.jpg, .jpeg, .mps,.gif}
+\RequirePackage[pdftex,hyperindex,colorlinks]{hyperref}
+%\usepackage{thumbpdf}
+\pdfcompresslevel=9
+\hypersetup{
+	pdftitle={Un mini-corso sulla Relatività di Einstein},
+	pdfauthor={CristianCantoro},
+	pdfkeywords={relatività,ristretta,generale, Einstein},
+	pdfpagemode=UseThumbs,
+	pdfpagelayout=OneColumn
+}
+\else
+\typeout{RENDERING DVI - NON PDF - NON PDF - NON PDF}
+\usepackage[dvips]{graphicx}
+\RequirePackage[dvipdfm,hyperindex,colorlinks]{hyperref}
+\fi
+\typeout{}\typeout{}
+
+\pdfoptionpdfminorversion=6
+
+%********************************PACCHETTI*************************************
+\input{TeX/packages}
+%*******************************VERSIONE***************************************
+
+\newcommand{\versione}{0.4}
+
+%******************************SYNTAX******************************************
+% decommentare la riga sotto, se si vuole solo controllare la sintassi del
+% documento, senza produrre un output, è molto più veloce
+%
+%\syntaxonly
+
+%********************************DEFINIZIONI MATEMATICHE***********************
+\input{TeX/fisica1/math_op}
+
+%*********************************NUOVE TABELLE********************************
+% tabella usata per la definizione delle constanti in appendice
+\newenvironment{tabellacostanti}{\begin{tabular}{p{3.4cm}lp{4.5cm}ll} \hline
+costante&simbolo&valore&unità&errore rel\\ \hline}{\hline\end{tabular}}
+
+%*********************************NUOVI AMBIENTI*******************************
+\newenvironment{definizioneunita}{\begin{quote}}{\end{quote}}
+
+%********************************NUOVI AMBIENTI THEOREM************************
+\input{TeX/fisica1/new_theorem}
+
+%*************************************NUOVE UNITA'*****************************
+\input{TeX/fisica1/new_unit}
+
+%**************************************STILE***********************************
+\pagestyle{headings}
+
+%****************************INFORMAZIONI TITOLO AUTORE DATA*******************
+
+\title{Un mini-corso sulla Relatività di Einstein}
+\date{maggio 2011}
+\author{Cristian Consonni}
+
+% metadata con informazioni sulla licenza
+\ifpdf
+\includexmp{metadata}
+\fi
+
+
+\makeindex
+
+\setcounter{parttocdepth}{0}
+
+%%******************************INCLUDE ONLY***********************************
+%\input{TeX/includes}
+
+%%********************************INIZIO DOCUMENTO*****************************
+\begin{document}
+\frontmatter
+\input{TeX/titolo}
+%%*******************************INDICE****************************************
+\doparttoc
+\dominitoc
+\tableofcontents
+
+%*******************************CORPO PRINCIPALE*******************************
+\mainmatter
+\input{TeX/testi/introduzione}
+\input{TeX/testi/matematica}
+\input{TeX/testi/galileo}
+\input{TeX/testi/michelson}
+\input{TeX/testi/relspec}
+\input{TeX/testi/minkowski}
+\input{TeX/testi/conferme_relspec}
+\input{TeX/testi/relgen}
+\input{TeX/testi/conferme_relgen}
+
+%**************************INIZIO APPENDICI************************************
+\appendix
+\input{TeX/testi/attribuzione}
+
+%*****************************BIBLIOGRAFIA*************************************
+\backmatter
+\bibliography{TeX/fisica1/biblio}{}
+\bibliographystyle{plain} %altri stili: prsty are abbrv, alpha, plain and unsrt
+
+%********************************INDICE ANALITICO******************************
+
+\ifpdf
+\pdfbookmark{Indice analitico}{index}
+\fi
+
+\printindex
+
+\typeout{}\typeout{}\typeout{}
+\typeout{*******************************************************************************}
+\typeout{RENDERING RIASSUNTI DI FISICA FINITO}
+\typeout{*******************************************************************************}
+\typeout{Magari ti e' andata bene}
+\typeout{}\typeout{}\typeout{}
+
+\end{document}

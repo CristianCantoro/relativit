@@ -1,0 +1,5 @@
+#!/bin/bash
+
+#Install texlive-full package, kind of overkill ;-)
+apt-get install texlive-full
+apt-get install tetex-fonts

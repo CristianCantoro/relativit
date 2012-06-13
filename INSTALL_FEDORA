@@ -1,0 +1,3 @@
+#!/bin/bash
+yum install 'tex(quotchap.sty)' 'tex(wrapfig.sty)'
+yum install tetex-fonts
